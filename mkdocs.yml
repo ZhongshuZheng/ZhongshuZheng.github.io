@@ -1,8 +1,9 @@
 site_name: Adam Zheng 的公开笔记
 site_description: Adam Zheng 的个人知识库、学习记录与思考。
 site_url: https://ZhongshuZheng.github.io/
-repo_url: https://github.com/ZhongshuZheng/ZhongshuZheng.github.io
-repo_name: ZhongshuZheng/ZhongshuZheng.github.io
+
+exclude_docs: |
+  blog/
 
 theme:
   name: material
@@ -35,7 +36,6 @@ plugins:
       lang:
         - zh
         - en
-  - blog
 
 markdown_extensions:
   - admonition
@@ -55,8 +55,6 @@ nav:
   - 首页: index.md
   - 公开笔记:
       - 笔记索引: notes/index.md
-  - 博客: blog/index.md
   - 关于: about.md
 
 copyright: Copyright &copy; 2026 Adam Zheng
-

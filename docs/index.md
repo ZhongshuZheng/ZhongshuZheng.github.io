@@ -7,9 +7,7 @@
 ## 从这里开始
 
 - 前往[公开笔记](notes/index.md)，按主题浏览知识条目。
-- 查看[博客](blog/index.md)，阅读按时间发布的文章。
 - 在[关于](about.md)页面了解这个站点。
 
 !!! tip "持续更新"
     这个站点由 Markdown 文件生成。每一次推送都会自动发布到 GitHub Pages。
-
