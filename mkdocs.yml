@@ -4,6 +4,7 @@ site_url: https://ZhongshuZheng.github.io/
 
 exclude_docs: |
   blog/
+  about.md
 
 theme:
   name: material
@@ -55,6 +56,5 @@ nav:
   - 首页: index.md
   - 公开笔记:
       - 笔记索引: notes/index.md
-  - 关于: about.md
 
 copyright: Copyright &copy; 2026 Adam Zheng
