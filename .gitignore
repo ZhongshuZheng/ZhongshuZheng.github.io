@@ -1,7 +1,8 @@
 .venv/
 site/
+.codex_tmp/
+src_doc/
 __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
-
