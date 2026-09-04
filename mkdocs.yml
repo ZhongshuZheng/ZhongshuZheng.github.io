@@ -58,7 +58,10 @@ extra_css:
 nav:
   - 首页: index.md
   - 公开笔记:
+      - 笔记索引: notes/index.md
       - 杂项知识:
           - 中世纪盔甲: notes/misc/medieval-armor/index.md
+          - 乐理: notes/misc/music-theory/index.md
+          - 一些饮料与食物: notes/misc/food-and-drink/index.md
 
 copyright: Copyright &copy; 2026 Adam Zheng
