@@ -58,7 +58,6 @@ extra_css:
 nav:
   - 首页: index.md
   - 公开笔记:
-      - 笔记索引: notes/index.md
       - 杂项知识:
           - 中世纪盔甲: notes/misc/medieval-armor/index.md
 
