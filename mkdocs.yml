@@ -60,6 +60,9 @@ nav:
       - index.md
       - 计算机:
           - Design Principle: notes/computer/design-principles.md
+      - 人工智能:
+          - Evolution computation: notes/ai/evolution-computation.md
+          - Swarm Intelligence: notes/ai/swarm-intelligence.md
       - 杂项知识:
           - GDC 论文阅读: notes/misc/gdc-paper-notes.md
           - 中世纪盔甲: notes/misc/medieval-armor.md
