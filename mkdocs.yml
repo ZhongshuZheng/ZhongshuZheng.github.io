@@ -1,4 +1,4 @@
-site_name: Adam Zheng 的公开笔记
+site_name: Adam Zheng's Notebook
 site_description: Adam Zheng 的个人知识库、学习记录与思考。
 site_url: https://ZhongshuZheng.github.io/
 
@@ -11,7 +11,7 @@ theme:
   language: zh
   features:
     - navigation.tabs
-    - navigation.sections
+    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight
@@ -56,9 +56,8 @@ extra_css:
   - stylesheets/notes.css
 
 nav:
-  - 首页: index.md
-  - 公开笔记:
-      - 笔记索引: notes/index.md
+  - 首页:
+      - index.md
       - 杂项知识:
           - 中世纪盔甲: notes/misc/medieval-armor/index.md
           - 乐理: notes/misc/music-theory/index.md

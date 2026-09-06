@@ -1,4 +1,4 @@
-# Adam Zheng 的笔记本
+# Adam Zheng's Notebook
 
 欢迎来到我的笔记知识库。
 
@@ -9,9 +9,9 @@
 
 email：zhengzhongshu1996@163.com
 
-## 从这里开始
+## 笔记目录
 
-- 前往[公开笔记](notes/index.md)，按主题浏览知识条目。
+请从左侧目录中选择要浏览的笔记。
 
 <!--
 !!! tip "持续更新"
