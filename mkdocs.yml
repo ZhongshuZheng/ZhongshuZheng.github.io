@@ -58,7 +58,10 @@ extra_css:
 nav:
   - 首页:
       - index.md
+      - 计算机:
+          - Design Principle: notes/computer/design-principles.md
       - 杂项知识:
+          - GDC 论文阅读: notes/misc/gdc-paper-notes.md
           - 中世纪盔甲: notes/misc/medieval-armor.md
           - 乐理: notes/misc/music-theory.md
           - 一些饮料与食物: notes/misc/food-and-drink.md
