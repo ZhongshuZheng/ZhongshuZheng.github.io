@@ -40,7 +40,7 @@
 ## 咖啡
 
 <figure markdown="span">
-  ![咖啡从种植到萃取的流程](images/image-01.jpeg){ loading=lazy }
+  ![咖啡从种植到萃取的流程](food-and-drink/images/image-01.jpeg){ loading=lazy }
   <figcaption>咖啡从种植到萃取的流程</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@
 - **拉格（Lager）**：下发酵啤酒，使用低温发酵和熟成过程；工业化后更容易控制温度并扩大产量。
 
 <figure markdown="span">
-  ![艾尔与拉格发酵方式示意图](images/image-02.jpeg){ loading=lazy }
+  ![艾尔与拉格发酵方式示意图](food-and-drink/images/image-02.jpeg){ loading=lazy }
   <figcaption>艾尔与拉格发酵方式示意图</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@
 ## 日式拉面
 
 <figure markdown="span">
-  ![日式拉面的基本组成](images/image-03.jpeg){ loading=lazy }
+  ![日式拉面的基本组成](food-and-drink/images/image-03.jpeg){ loading=lazy }
   <figcaption>日式拉面的基本组成</figcaption>
 </figure>
 
@@ -121,7 +121,7 @@
 ### 3. 着味
 
 <figure markdown="span">
-  ![盐味与酱油拉面示意图](images/image-04.jpeg){ loading=lazy }
+  ![盐味与酱油拉面示意图](food-and-drink/images/image-04.jpeg){ loading=lazy }
   <figcaption>盐味与酱油拉面示意图</figcaption>
 </figure>
 
@@ -132,7 +132,7 @@
 ### 4. 配菜
 
 <figure markdown="span">
-  ![日式拉面的常见配菜](images/image-05.jpeg){ loading=lazy }
+  ![日式拉面的常见配菜](food-and-drink/images/image-05.jpeg){ loading=lazy }
   <figcaption>日式拉面的常见配菜</figcaption>
 </figure>
 
@@ -148,6 +148,6 @@
 - 选购橄榄油时，可关注“特级初榨”（extra virgin）标识。
 
 <figure markdown="span">
-  ![不同脂肪酸类型示意图](images/image-06.jpeg){ loading=lazy }
+  ![不同脂肪酸类型示意图](food-and-drink/images/image-06.jpeg){ loading=lazy }
   <figcaption>不同脂肪酸类型示意图</figcaption>
 </figure>

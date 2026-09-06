@@ -25,7 +25,7 @@ Word 原稿建议使用内置样式：
 ```powershell
 .\.venv\Scripts\python.exe tools\docx_to_markdown.py `
   "src_doc\杂项知识\中世纪盔甲.docx" `
-  "docs\notes\misc\medieval-armor\index.md"
+  "docs\notes\misc\medieval-armor.md"
 ```
 
 转换器会：
@@ -33,9 +33,11 @@ Word 原稿建议使用内置样式：
 - 按 Word 中的实际顺序读取段落、表格和图片。
 - 将 Word 标题与列表样式映射为 Markdown。
 - 保留加粗、斜体和超链接。
-- 将图片提取到文章旁边的 `images/` 目录。
+- 将图片提取到与文章同名的资源目录，例如 `medieval-armor/images/`。
 - 生成适配 Material for MkDocs 的图片容器。
 - 输出转换统计与需要人工检查的警告。
+
+叶级笔记使用有意义的文件名（如 `medieval-armor.md`），不要使用 `index.md`。站点仅将真正的栏目首页命名为 `index.md`，避免 Material 将分类下的第一篇笔记误识别为分类索引。
 
 如果目标 Markdown 已存在，工具默认拒绝覆盖。确认需要重新生成时添加 `--force`。
 

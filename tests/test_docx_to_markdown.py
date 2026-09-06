@@ -47,6 +47,26 @@ class DocxToMarkdownTests(unittest.TestCase):
             self.assertEqual(report["images"], 1)
             self.assertEqual(report["tables"], 1)
 
+    def test_keeps_flat_article_assets_in_a_named_directory(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            source = root / "示例笔记.docx"
+            output = root / "notes" / "example-note.md"
+            image = root / "fixture.png"
+            image.write_bytes(ONE_PIXEL_PNG)
+
+            document = Document()
+            document.add_picture(str(image), width=Inches(1))
+            document.save(source)
+
+            convert(source, output)
+            markdown = output.read_text(encoding="utf-8")
+
+            self.assertIn("example-note/images/image-01.png", markdown)
+            self.assertTrue(
+                (output.parent / "example-note" / "images" / "image-01.png").exists()
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

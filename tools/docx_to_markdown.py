@@ -69,9 +69,12 @@ def image_extension(part: object) -> str:
 
 
 class ImageExporter:
-    def __init__(self, document: DocumentType, output_dir: Path) -> None:
+    def __init__(
+        self, document: DocumentType, output_dir: Path, reference_prefix: str = ""
+    ) -> None:
         self.document = document
         self.output_dir = output_dir
+        self.reference_prefix = reference_prefix
         self.count = 0
 
     def export_from_run(self, run: Run) -> list[tuple[str, str]]:
@@ -83,7 +86,12 @@ class ImageExporter:
             destination = self.output_dir / "images" / filename
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_bytes(part.blob)
-            exported.append((f"图片 {self.count}", f"images/{filename}"))
+            exported.append(
+                (
+                    f"图片 {self.count}",
+                    f"{self.reference_prefix}images/{filename}",
+                )
+            )
         return exported
 
 
@@ -182,7 +190,13 @@ def convert(source: Path, output: Path, title: str | None = None, force: bool = 
     document = Document(source)
     article_title = title or source.stem
     output.parent.mkdir(parents=True, exist_ok=True)
-    exporter = ImageExporter(document, output.parent)
+    if output.stem.casefold() in {"index", "readme"}:
+        asset_directory = output.parent
+        reference_prefix = ""
+    else:
+        asset_directory = output.parent / output.stem
+        reference_prefix = f"{output.stem}/"
+    exporter = ImageExporter(document, asset_directory, reference_prefix)
     blocks: list[tuple[str, str]] = [("heading", f"# {escape_markdown(article_title)}")]
     style_counts: Counter[str] = Counter()
     normal_paragraphs = 0

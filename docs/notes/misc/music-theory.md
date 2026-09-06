@@ -1,6 +1,6 @@
 # 乐理
 
-* 记录时间：2024-10-08
+* 创建时间：2024-10-08
 
 ## 调性
 
@@ -25,7 +25,7 @@
 - 减七琶音：从关系小调的主音向下移动半音作为根音，再按相隔两级的方式向上叠置。
 
 <figure markdown="span">
-  ![调内和弦功能的手写示意图](images/image-01.jpeg){ loading=lazy }
+  ![调内和弦功能的手写示意图](music-theory/images/image-01.jpeg){ loading=lazy }
   <figcaption>调内和弦功能的手写示意图</figcaption>
 </figure>
 

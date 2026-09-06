@@ -1,11 +1,11 @@
 # 中世纪盔甲
 
-* 记录时间：2025-06-09
+* 创建时间：2025-06-09
 
 ## 头盔
 
 <figure markdown="span">
-  ![中世纪头盔类型与发展示意图](images/image-01.png){ loading=lazy }
+  ![中世纪头盔类型与发展示意图](medieval-armor/images/image-01.png){ loading=lazy }
   <figcaption>中世纪头盔类型与发展示意图</figcaption>
 </figure>
 
@@ -22,7 +22,7 @@
 - **米兰盔／武装盔（Armet）**：由犬面盔发展而来，鼻子处呈棱形外延再收回。
 
 <figure markdown="span">
-  ![米兰盔与武装盔示意图](images/image-02.png){ loading=lazy }
+  ![米兰盔与武装盔示意图](medieval-armor/images/image-02.png){ loading=lazy }
   <figcaption>米兰盔与武装盔示意图</figcaption>
 </figure>
 
@@ -31,7 +31,7 @@
 格林威治盔又名船盔，由武装盔衍化而来。造型精致，面罩曲线像船脊一样向内凹。
 
 <figure markdown="span">
-  ![格林威治盔](images/image-03.png){ loading=lazy }
+  ![格林威治盔](medieval-armor/images/image-03.png){ loading=lazy }
   <figcaption>格林威治盔，也称船盔</figcaption>
 </figure>
 
