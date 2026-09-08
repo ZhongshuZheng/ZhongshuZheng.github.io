@@ -15,9 +15,17 @@
   <figcaption>K-means 聚类优化目标</figcaption>
 </figure>
 
-**优点：** 保证收敛到局部最优，实现简单
+<div class="grid cards" markdown>
 
-**缺点：** 受初始值影响，不能全局最优；均值容易受到噪点影响
+-   **优点**
+
+    保证收敛到局部最优，实现简单
+
+-   **局限**
+
+    受初始值影响，不能全局最优；均值容易受到噪点影响
+
+</div>
 
 #### 1.1.1 模糊k-means
 
@@ -40,9 +48,17 @@
   <figcaption>PAM 替换代价</figcaption>
 </figure>
 
-**优点：** 不易受到噪声影响
+<div class="grid cards" markdown>
 
-**缺点：** 计算复杂度更高，面对大数据计算效率低
+-   **优点**
+
+    不易受到噪声影响
+
+-   **局限**
+
+    计算复杂度更高，面对大数据计算效率低
+
+</div>
 
 #### 1.2.1 CLARA算法
 
@@ -80,7 +96,9 @@ K是一个单变量核函数，用以表达数据邻域（就是用来表示这�
 
 利用层次方法的平衡迭代规约和聚类（Balanced Iterative Reducing and Clustering Using Hierarchies）
 
-详见： [https://www.cnblogs.com/pinard/p/6179132.html](https://www.cnblogs.com/pinard/p/6179132.html)
+??? info "延伸阅读"
+
+    [BIRCH 聚类算法原理](https://www.cnblogs.com/pinard/p/6179132.html)
 
 通过一种 CF（Cluster Feature，有线性特性，可简单相加）来构建一种 CF Tree，特点类似于 B+ 树。最后，**CF 树的每一个节点（一般来说）都可以是一个聚类的簇**。
 
@@ -116,7 +134,9 @@ K是一个单变量核函数，用以表达数据邻域（就是用来表示这�
 
 循环处理所有数据点，判断该点为中心，邻域是否足够密集，从而属于核心点，或属于局外点。把所有相关的点标记为同一个簇。
 
-详见： [https://www.cnblogs.com/pinard/p/6208966.html](https://www.cnblogs.com/pinard/p/6208966.html)
+??? info "延伸阅读"
+
+    [DBSCAN 密度聚类算法](https://www.cnblogs.com/pinard/p/6208966.html)
 
 特点：适合任意形状的稠密聚类
 
@@ -150,7 +170,9 @@ K是一个单变量核函数，用以表达数据邻域（就是用来表示这�
 
 把数据投射在最底层网格上；上面每一层的粒度都更大一些。每一层都是一个聚类结果。
 
-WTF…这就完事了…
+??? quote "随手记"
+
+    WTF…这就完事了…
 
 ### 4.2 CLIQUE
 
@@ -202,18 +224,19 @@ NCut：最小化切掉的边权并最大化每个图的子点的度的和。（�
 
 也就是说，谱聚类把原始邻接矩阵用特征矩阵进行降维，然后用更好计算kmeans的特征矩阵来进行聚类，代替原始的问题
 
-一点有趣的东西：
+??? note "谱聚类的物理意义"
 
-<figure markdown="span">
-  ![谱聚类的物理意义](cluster/images/image-07.png){ loading=lazy }
-  <figcaption>谱聚类的物理意义</figcaption>
-</figure>
+    <figure markdown="span">
+      ![谱聚类的物理意义](cluster/images/image-07.png){ loading=lazy }
+      <figcaption>谱聚类的物理意义</figcaption>
+    </figure>
 
-详见： [https://www.cnblogs.com/pinard/p/6221564.html](https://www.cnblogs.com/pinard/p/6221564.html)
+??? info "延伸阅读"
+
+    [谱聚类原理总结](https://www.cnblogs.com/pinard/p/6221564.html)
 
 特点适应性好，聚类效果优秀，但是维度大计算会很慢
 
 ## 7 递增聚类方法
 
 应对高速变化的网络数据时代，新的数据在已有聚类结果的基础上继续进行聚类。
-
