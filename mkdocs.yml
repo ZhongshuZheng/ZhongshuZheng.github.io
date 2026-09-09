@@ -73,6 +73,7 @@ nav:
           - Swarm Intelligence: notes/ai/swarm-intelligence.md
           - Cluster: notes/ai/cluster.md
           - Reinforcement Learning: notes/ai/reinforcement-learning.md
+          - 控制理论: notes/ai/control-theory.md
       - 杂项知识:
           - GDC 论文阅读: notes/misc/gdc-paper-notes.md
           - 中世纪盔甲: notes/misc/medieval-armor.md
