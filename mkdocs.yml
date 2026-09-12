@@ -76,6 +76,9 @@ nav:
           - Reinforcement Learning: notes/ai/reinforcement-learning.md
           - "[简介]控制理论": notes/ai/control-theory.md
           - "[简介]多目标学习": notes/ai/multi-task-learning.md
+          - "[简介]推荐系统模型速览": notes/ai/recommender-model-overview.md
+          - "[简介]现代 AI 图像生成技术": notes/ai/modern-ai-image-generation.md
+          - "[经验]假设检验核心理解": notes/ai/hypothesis-testing.md
           - Transformer: notes/ai/transformer.md
       - 杂项知识:
           - GDC 论文阅读: notes/misc/gdc-paper-notes.md

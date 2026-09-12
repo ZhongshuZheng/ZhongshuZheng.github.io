@@ -37,7 +37,7 @@ $$
     \operatorname{Attention}(Q,K,V)=\operatorname{softmax}\left(\frac{QK^\mathsf{T}}{\sqrt d}+\operatorname{Mask}\right)V
     $$
 
-3. $Q(s\times d)K^\mathsf{T}(d\times s)$ 可以直接理解为：把 Q 中每个 Sequence 元素的一组 $d$ 个特征，依次与其他 K 中所有 Sequence 元素的 $d$ 个特征进行点对点余弦相似度计算，算出 Q 对每个 K 的打分 $(s\times s)$。
+3. $Q(s\times d)K^\mathsf{T}(d\times s)$ 可以直接理解为：把 Q 中每个 Sequence 元素的一组 $d$ 个特征，依次与其他 K 中所有 Sequence 元素的 $d$ 个特征进行点对点做点积的相似度计算，算出 Q 对每个 K 的打分 $(s\times s)$。
 4. Softmax 作用在最后一个维度上，即对于每个 Q，计算它对所有 K 的打分并归一化，看每个 Q 应该关注谁。
 5. $\sqrt d$ 是因为 Q 与 K 独立同分布、均值为 0、方差为 1，矩阵相乘会把方差扩大 $d$ 倍，所以除以 $\sqrt d$ 进行归一化，避免点积进入 Softmax 的饱和区。
 6. Mask 一般直接给负无穷；Padding Mask 盖住对应位置；Causal Mask 盖住所有 $>i$ 的位置，从而可以让 Transformer 并行训练，相比 RNN，这种训练叫 Teacher Forcing：直接用一组数据对每个位置施加 Causal Mask 并行训练。

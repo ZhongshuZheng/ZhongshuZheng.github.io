@@ -245,17 +245,19 @@ SFT → Reward Model → PPO
 - 流程改为 SFT → DPO
 - 使用已经收集的 prompt、preferred response 与 rejected response；结合冻结的 reference model，让模型相对于 reference 提高 preferred response 对 rejected response 的概率优势
 - 不再显式训练 Reward Model，也不需要 PPO rollout 和 Critic
+- 局限是pairwise训练太慢，一次一对
 
 ### 2.4 GRPO
 
-用一组回答的均值替代掉critic。
+- 用一组回答的均值替代掉critic，每个token观察与均值的高低计算优势。节省资源。
+- 使用groupwise，效率更快
 
 ### 2.5 GSPO
 
-在grpo基础上，不再是每个token更新一次，而是整条链路结束后统一更新。
+在grpo基础上，不再是每个token更新一次，而是整条链路结束后统一更新，让局部token最优走向全局最优。IS部分直接连乘每个模块的值。对于MOE专家模型来说，解决了token通信复杂的问题，序列简化数据交换。
 
 ### 2.6 为什么没有用 SAC 之类
 
-因为要控制不能跑太远。
+因为后训练要控制不能距离原本模型跑太远。
 
 参考链接：https://zhuanlan.zhihu.com/c\_1215667894253830144
