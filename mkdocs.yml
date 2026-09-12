@@ -79,6 +79,9 @@ nav:
           - "[简介]推荐系统模型速览": notes/ai/recommender-model-overview.md
           - "[简介]现代 AI 图像生成技术": notes/ai/modern-ai-image-generation.md
           - "[经验]假设检验核心理解": notes/ai/hypothesis-testing.md
+          - "[经验]深度学习基础与 Trick": notes/ai/deep-learning-basics-and-tricks.md
+          - "[经验]树模型特征工程": notes/ai/tree-model-feature-engineering.md
+          - "[经验]最优化问题的一些 Tips": notes/ai/optimization-tips.md
           - Transformer: notes/ai/transformer.md
       - 杂项知识:
           - GDC 论文阅读: notes/misc/gdc-paper-notes.md
