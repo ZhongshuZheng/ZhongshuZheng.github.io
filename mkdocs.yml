@@ -73,6 +73,8 @@ nav:
           - Evolution computation: notes/ai/evolution-computation.md
           - Swarm Intelligence: notes/ai/swarm-intelligence.md
           - Cluster: notes/ai/cluster.md
+          - Machine Learning: notes/ai/machine-learning.md
+          - Causal Learning: notes/ai/causal-learning.md
           - Reinforcement Learning: notes/ai/reinforcement-learning.md
           - "[简介]控制理论": notes/ai/control-theory.md
           - "[简介]多目标学习": notes/ai/multi-task-learning.md
